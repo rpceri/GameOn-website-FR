@@ -208,6 +208,10 @@ input {
   font-size: 20px;
   height: 48px;
 }
+.text-control:invalid { /* ou input:invalid  */
+  box-shadow: 0 0 5px 1px red;
+}
+
 .formData[data-error]::after {
   content: attr(data-error);
   font-size: 0.4em;
@@ -527,3 +531,16 @@ footer {
   }
 }
 
+/* pour afficher message d'erreur */
+.error{
+  display: none;
+ /* justify-content: flex-end;*/
+  font-size: 0.45em;
+  color: red;
+
+}
+
+.error-visible{
+  display:block;
+ /* height : 10px;*/
+}
