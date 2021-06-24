@@ -62,6 +62,67 @@ form.addEventListener('click', () => {
   }
 })
 
+// controle nom
+const last = document.getElementById('last');
+last.onblur = function() {
+  var idChampSIgnalisation =  document.getElementById('error-nom');
+  if(last.value.length < 2){ 
+    idChampSIgnalisation.innerHTML = "Veuillez entrer 2 caractères ou plus pour le champ du nom.";
+    idChampSIgnalisation.classList.add('error-visible');
+  } else {
+    idChampSIgnalisation.innerHTML = "";
+    idChampSIgnalisation.classList.remove('error-visible');
+  }
+};
+
+// controle email
+const email = document.getElementById('email');
+
+email.onblur = function() {
+  var idChampSIgnalisation =  document.getElementById('error-email');
+
+  if(email.value.length < 2){ 
+    idChampSIgnalisation.innerHTML = "Veuillez saisire votre email.";
+    idChampSIgnalisation.classList.add('error-visible');
+  }
+  else if (ValidateEmail(email.value) === false) {
+    idChampSIgnalisation.innerHTML = "L'adresse mail saisie est incorrecte.";
+    idChampSIgnalisation.classList.add('error-visible');
+  } else {
+    idChampSIgnalisation.innerHTML = "";
+    idChampSIgnalisation.classList.remove('error-visible');
+  }
+};
+
+
+// controle date de naissance
+const birthdate = document.getElementById('birthdate');
+birthdate.onblur = function() {
+  var idChampSIgnalisation =  document.getElementById('error-date');
+  if(birthdate.value.length == 0){ 
+    idChampSIgnalisation.innerHTML = "Vous devez entrer votre date de naissance.";
+    idChampSIgnalisation.classList.add('error-visible');
+  } 
+  else if (parseDate(birthdate.value) === false) {
+    idChampSIgnalisation.innerHTML = "La date de naissance saisie est incorrecte.";
+    idChampSIgnalisation.classList.add('error-visible');
+  }
+  else {
+    idChampSIgnalisation.innerHTML = "";
+    idChampSIgnalisation.classList.remove('error-visible');
+  }
+};
+
+function parseDate(str) {
+  var m = str.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  return (m) ? new Date(m[3], m[2]-1, m[1]) : null;
+}
+function ValidateEmail(mail) 
+{
+ if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))   return (true);
+else return (false);
+}
+
 function validate(){
   var formValide = 1;
 
