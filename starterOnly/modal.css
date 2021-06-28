@@ -138,19 +138,6 @@ main {
 
 /* Modal form */
 
-.button {
-  background: #fe142f;
-  margin-top: 0.5em;
-  padding: 1em;
-  color: #fff;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.button:hover {
-  background: #3876ac;
-}
 
 .smFont {
   font-size: 16px;
@@ -324,9 +311,24 @@ input[data-error]::after {
 .close:after {
   transform: rotate(-45deg);
 }
+
+
+.button {
+  background: #fe142f;
+  margin-top: 0.5em;
+  padding: 1em;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background: #3876ac;
+}
+
 .btn-submit,
 .btn-signup {
-  background: #fe142f;
   display: block;
   margin: 0 auto;
   border-radius: 7px;
