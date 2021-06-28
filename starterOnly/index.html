@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Reservation</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="modal.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
@@ -14,7 +15,7 @@
   <body>
     <div class="topnav" id="myTopnav">
       <div class="header-logo">
-      <img alt="logo" src="Logo.png" width="auto" height="auto" />
+      <img alt="logo" src="Logo.png" />
     </div>
     <div class="main-navbar">
       
@@ -24,7 +25,7 @@
       <a href="#"><span>Contact</span></a>
       <a href="#"><span>Évènements passés</span></a>
       <a href="javascript:void(0);" class="icon" onclick="editNav()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars">&nbsp;</i>
       </a>
     </div>
     </div>
@@ -54,7 +55,7 @@
 
       <div class="bground">
         <div class="content">
-          <span class="close"></span>
+          <span class="close">&nbsp;</span>
           <div class="modal-body">
             <form
               name="form_reserve"
@@ -64,7 +65,7 @@
               onsubmit="return validate()">
               <div
                 class="formData">
-                <label for="first>Prénom</label><br>
+                <label for="first">Prénom</label><br>
                 <input
                   class="text-control"
                   type="text"
@@ -85,7 +86,7 @@
                   minlength="2"
                   required
                 /><br>
-                <div id="error-nom" class="error"></div>
+                <div id="error-nom" class="error">&nbsp;</div>
               </div>
               <div
                 class="formData">
@@ -97,7 +98,7 @@
                   name="email"
                   required
                 /><br>
-                <div id="error-email" class="error"></div>
+                <div id="error-email" class="error">&nbsp;</div>
               </div>
               <div
                 class="formData">
@@ -109,7 +110,7 @@
                   name="birthdate"
                   required
                 /><br>
-                <div id="error-date" class="error"></div>
+                <div id="error-date" class="error">&nbsp;</div>
               </div>
               <div
                 class="formData">
@@ -127,7 +128,7 @@
                   value="New York"
                 />
                 <label class="checkbox-label" for="location1">
-                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-icon">&nbsp;</span>
                   New York</label
                 >
                 <input
@@ -138,7 +139,7 @@
                   value="San Francisco"
                 />
                 <label class="checkbox-label" for="location2">
-                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-icon">&nbsp;</span>
                   San Francisco</label
                 >
                 <input
@@ -149,7 +150,7 @@
                   value="Seattle"
                 />
                 <label class="checkbox-label" for="location3">
-                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-icon">&nbsp;</span>
                   Seattle</label
                 >
                 <input
@@ -160,7 +161,7 @@
                   value="Chicago"
                 />
                 <label class="checkbox-label" for="location4">
-                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-icon">&nbsp;</span>
                   Chicago</label
                 >
                 <input
@@ -171,7 +172,7 @@
                   value="Boston"
                 />
                 <label class="checkbox-label" for="location5">
-                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-icon">&nbsp;</span>
                   Boston</label
                 >
                 <input
@@ -182,10 +183,10 @@
                   value="Portland"
                 />
                 <label class="checkbox-label" for="location6">
-                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-icon">&nbsp;</span>
                   Portland</label
                 >
-                <div id="error-radio" class="error"></div>
+                <div id="error-radio" class="error">&nbsp;</div>
               </div>
 
               <div
@@ -195,16 +196,17 @@
                   type="checkbox"
                   id="checkbox1"
                   checked
+                  required
                 />
-                <label class="checkbox2-label" for="checkbox1" required>
-                  <span class="checkbox-icon"></span>
+                <label class="checkbox2-label" for="checkbox1">
+                  <span class="checkbox-icon">&nbsp;</span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
-                <span id="error-checkbox1" class="error"></span>
+                <span id="error-checkbox1" class="error">&nbsp;</span>
                 <br>
                 <input class="checkbox-input" type="checkbox" id="checkbox2" />
                 <label class="checkbox2-label" for="checkbox2">
-                  <span class="checkbox-icon"></span>
+                  <span class="checkbox-icon">&nbsp;</span>
                   Je souhaite être prévenu des prochains évènements.
                 </label>
                 <br>
@@ -226,6 +228,6 @@
         Copyright 2014 - 2020, GameOn Inc.
       </p>
     </footer>
-    <script src="modal.js"></script>
+    <script src="modal.js">&nbsp;</script>
   </body>
 </html>
