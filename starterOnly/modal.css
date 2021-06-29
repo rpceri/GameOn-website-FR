@@ -180,6 +180,7 @@ label {
   font-weight: normal;
   display: inline-block;
   margin-bottom: 11px;
+  padding-top: 9px;
 }
 input {
   padding: 8px;
@@ -483,7 +484,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 980px) {
   .hero-section {
     display: block;
     box-shadow: unset;
@@ -538,7 +539,7 @@ footer {
  /* justify-content: flex-end;*/
   font-size: 0.45em;
   color: red;
-
+  padding-top : 1em;
 }
 
 .error-visible{

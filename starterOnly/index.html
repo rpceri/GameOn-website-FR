@@ -62,6 +62,7 @@
               action="index.html"
               method="get"
               onsubmit="return validate()">
+
               <div
                 class="formData">
                 <label for="first">Prénom</label><br>
@@ -73,7 +74,9 @@
                   minlength="2"
                   required
                 /><br>
+                <div id="error-first" class="error">&nbsp;</div>
               </div>
+
               <div
                 class="formData">
                 <label for="last">Nom</label><br>
@@ -85,8 +88,9 @@
                   minlength="2"
                   required
                 /><br>
-                <div id="error-nom" class="error">&nbsp;</div>
+                <div id="error-last" class="error">&nbsp;</div>
               </div>
+
               <div
                 class="formData">
                 <label for="email">E-mail</label><br>
@@ -99,22 +103,25 @@
                 /><br>
                 <div id="error-email" class="error">&nbsp;</div>
               </div>
+
               <div
                 class="formData">
                 <label for="birthdate">Date de naissance</label><br>
                 <input
                   class="text-control"
-                  type="date"
+                  type="text"
                   id="birthdate"
                   name="birthdate"
                   required
                 /><br>
                 <div id="error-date" class="error">&nbsp;</div>
               </div>
+
               <div
                 class="formData">
                 <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
-                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"  required>
+                <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99"  required><br> <!--  min="0" max="99"  required-->
+                <div id="error-quantity" class="error">&nbsp;</div>
               </div>
               <p class="text-label">Quelle ville ?</p>
               <div
@@ -228,5 +235,6 @@
       </p>
     </footer>
     <script src="modal.js"></script>
+    <script src="fonctions.js"></script>
   </body>
 </html>
