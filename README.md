@@ -1,5 +1,16 @@
 # Projet GameOn
-1. Forkez ce repo ;
-2. Il est conseillé d'utiliser VisualStudio Code et vous pouvez utiliser Docker, mais ce n'est pas obligatoire ;
-3. Il n'y a aucune dépendance ;
-4. Vous ne devez utiliser que du CSS personnalisé et du JavaScript pur, sans jQuery, Bootstrap ou autre librairie.
+
+lien projet  :
+https://openclassrooms.com/fr/paths/314/projects/807/assignment
+
+Fork du repo :
+https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR/issues
+
+## Auteur
+
+* **Pazdzior Raphaël** 
+
+## Liens direct vers la présentation
+
+https://rpceri.github.io/GameOn-website-FR/starterOnly/
+
